@@ -34,6 +34,22 @@ header {
     border-radius: 0 0 3rem 3rem;
 }
 
+.github {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+.github img {
+    width: 30px;
+}
+.github a {
+    color: var(--color-beige);
+}
 
 main {
     display: flex;
