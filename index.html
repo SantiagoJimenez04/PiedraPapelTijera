@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <meta name="description" content="¡Juega a Piedra, Papel o Tijera en línea! Desafía a la computadora en este clásico juego de decisiones estratégicas. ¿Serás el maestro de la estrategia? ¡Descúbrelo ahora y disfruta de la emoción en cada elección!">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Piedra, Papel o Tijera</h1>
+        <p>Juego desarrollado con HTML, CSS y JavaScript</p>
+    </header>
+
+    <main>
+        <p class="instrucciones" id="instrucciones"> El primero en llegar a 5 puntos gana🚀</p>
+
+        <div class="marcador">
+            <p class="nombre nombreJugador">Jugador</p>
+            <p class="nombre nombreComputador">Compu</p>
+            <p class="puntos">
+                <span id="puntosJugador">0</span>
+                <span>-</span>
+                <span id="puntosComputador">0</span>
+            </p>
+        </div>
+
+        <div class="eligeTuArma" id="eligeTuArma">
+            <h2>Elige tu Arma para el próximo Turno</h2>
+
+            <div class="armas">
+                <button class="arma" id="Piedra🪨">🪨</button>
+                <button class="arma" id="Papel📖">📖</button>
+                <button class="arma" id="Tijera✂️">✂️</button>
+            </div>
+        </div>
+
+        <div class="mensaje disabled" id="mensaje">
+            <p> Elegiste <span class="eleccion" id="eleccionUsuario">Piedra🪨</span> <br>
+                y la computadora eligio <span class="eleccion" id="eleccionComputadora"> Papel📖</span>
+            </p>
+            <p class="ganar" id="ganaPunto">¡Ganaste un Punto!🔥</p>
+        </div>
+
+        <button class="reiniciar disabled" id="reiniciar">Reiniciar juego</button>
+
+    </main>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+:root {
+    --color-gold: #f22b56;
+    --color-beige: #2e4347;
+    --color-purple: #fff8d4;
+}
+
+
+
+
+body {
+    background-color: var(--color-purple);
+    color: var(--color-beige);    
+}
+
+header {
+    background-color: var(--color-beige);
+    color: var(--color-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0 0 3rem 3rem;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.marcador {
+    background-color: var(--color-gold);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--color-purple);
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.marcador .nombre {
+    position: absolute;
+    color: var(--color-beige);
+    background-color: var(--color-purple);
+    line-height: 1;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 2px solid var(--color-gold);
+}
+
+.marcador .nombreJugador {
+    right: 110%;
+}
+
+.marcador .nombreComputador {
+    left: 110%;
+}
+
+.marcador .puntos {
+    font-size: 1.5rem;
+}
+
+.eligeTuArma {
+    margin-bottom: 3rem;
+}
+
+.eligeTuArma h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.armas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.arma {
+    font-size: 2.5rem;
+    background-color: var(--color-beige);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.arma:hover {
+    transform: scale(1.1);
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.mensaje .eleccion { 
+    color: var(--color-purple);
+    background-color: var(--color-gold);
+    padding-inline: .25rem;
+    border-radius: .25rem;
+}
+
+.ganar {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    background-color: var(--color-gold);
+    color: var(--color-purple);
+    border-radius: 1rem;
+    padding-inline: .8rem;
+}
+
+.reiniciar {
+    border: none;   
+    line-height: 1;
+    background-color: var(--color-beige);
+    color: var(--color-purple);
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.3s;
+}
+
+.reiniciar:hover {
+    transform: scale(1.1);
+}
+
+.disabled {
+    display: none;
+}
